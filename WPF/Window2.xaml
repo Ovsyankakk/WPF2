@@ -1,0 +1,16 @@
+﻿<Window x:Class="WPF.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF"
+        mc:Ignorable="d"
+        Title="Window2" Height="450" Width="800">
+    <Grid Margin="0,0,0,-60">
+        <Button x:Name="back" Content="Назад" HorizontalAlignment="Left" Height="43" Margin="10,381,0,0" VerticalAlignment="Top" Width="128" Click="back_Click"/>
+        <TextBox Name="InputWord" Margin="29,93,517,284"/>
+        <Label Content="Введите слово на русском" HorizontalAlignment="Left" Margin="29,62,0,0" VerticalAlignment="Top"/>
+        <Button Content="Перевести" Click="TranslateButton_Click" Margin="29,225,570,225"/>
+        <TextBlock x:Name="ResultTextBlock" HorizontalAlignment="Left" Margin="29,290,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="64" Width="281"/>
+    </Grid>
+</Window>
